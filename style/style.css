@@ -16,7 +16,8 @@
 html, body {
   padding: 0;
   margin: 0;
-  background-color: #FFFFF4;
+  background-color: #FFF;
+
   margin: 0; padding: 0; font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; -webkit-font-smoothing: antialiased; font-size: 16px; color: #333;
 }
 
@@ -27,7 +28,7 @@ html, body {
   position: relative;
 }
 
-.topbox {
+.fullvh {
   padding: 1rem;
   background-color: #fff;
   position: absolute;
@@ -71,4 +72,10 @@ html, body {
 
 .navbut {
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .postsCont {
+    width: 100%;
+  }
 }
