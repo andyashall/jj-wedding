@@ -1,10 +1,3 @@
-html, body {
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
-  ; margin: 0; padding: 0; font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; -webkit-font-smoothing: antialiased; font-size: 16px; color: #333;
-}
-
 /* alex-brush-regular - latin */
 @font-face {
   font-family: 'Alex Brush';
@@ -19,10 +12,19 @@ html, body {
        url('../fonts/alex-brush-v11-latin-regular.svg#AlexBrush') format('svg'); /* Legacy iOS */
 }
 
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFF4;
+  margin: 0; padding: 0; font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; -webkit-font-smoothing: antialiased; font-size: 16px; color: #333;
+}
+
 .cont {
   height: 100vh;
   background-position: center;
-  background-size: 100%
+  background-size: 100%;
+  position: relative;
 }
 
 .topbox {
@@ -32,5 +34,41 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font: 'Alex Brush'
+  font-family: 'Alex Brush', cursive;
+}
+
+.topbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  /*height: 3rem;*/
+  padding-left: 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.navbut {
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.topbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  /*height: 3rem;*/
+  padding-left: 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.navbut {
+  margin-right: 1rem;
 }
