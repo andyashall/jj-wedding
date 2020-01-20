@@ -18,24 +18,66 @@
   <!-- <div class="navbut">Home</div> -->
 </div>
 
-<div class="cont">
-  <div class="fullvh">
-    <span style="font-family: 'Alex Brush'; font-size: 4rem">Julianne & John</span> </div>
+<div class="cont fullvh">
+  <div class="white-centre-box">
+    <p style="font-family: 'Alex Brush'; font-size: 5rem">Julianne & John</p> 
+    <p style="font-family: 'Alex Brush'; font-size: 2rem">Invite you to celebrate with them</p> 
+    <p style="font-family: 'Alex Brush'; font-size: 2rem">22nd June 2020</p> 
+  </div>
   <img style="width: 100vw; position: " src="https://normsonline.files.wordpress.com/2014/06/dubrovnik-sketch-beach_2.jpg?w=600">
-</div>
-
-<div style="padding: 3rem; text-align: center;">
   <img style="position: absolute; top: 3rem; right: 2rem;
   width: 200px;" src="./img/plane.png">
-  <img style="width: 400px; display: inline-block;" src="https://previews.123rf.com/images/domenicogelermo/domenicogelermo1303/domenicogelermo130300204/18995205-portrait-of-happy-couple-with-thumbs-up-sign-isolated-on-white-background.jpg" style="">
-  <p style="text-align: left; max-width: 600px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
-<div class="cont" style="background-image: url('./img/2.jpg');">
-    <div class="fullvh" style="background-color: white; padding: 2rem; display: absolute; left: 50%; top: 50%;">
+<div style="display: flex; position: relative;">
+  <div style="width: 50%"><img style="width: 100%" src="./img/c2.jpg"></div>
+  <div style="width: 50%; padding: 3rem; box-sizing: border-box;">
+    <h1 style="margin-bottom: 0">Pack your bags!</h1>
+    <div style="position: relative; height: .3rem; background-color: #333; width: 50px; margin: 2rem 0;"></div>
+    <p style="font-size: 1.4rem">We are excited to invite you to join us exchanging our vows and making a lasting commitment to each other. Each one of you plays an important & unique role in our lives, sharing with us memories we will always treasure. So we hope that you can join us in Dubrovnik for yet another unforgettable moment, followed by celebrations, drinks and dancing.We'd love for you to take a look around to learn more about our wedding day plans. Don't forget to RSVP and let us know about any dietary requirements and song requests too!And finally, thanks so much for all of your love and support so far! We can't wait to celebrate this special day with all of our favourite people.Love, Jules & John xx</p>
+  </div>
+</div>
+
+<div class="cont" style="background-color: #333; color: #fff">
+  <div class="countdown"><span id="days-left"></span></div>
+</div>
+
+<div><img style="width: 100%;" src="https://i.pinimg.com/originals/7b/20/c3/7b20c3dec5b5dfe9d76e85fa045904b3.jpg"></div>
+
+<div class="cont fullvh" style="background-image: url('./img/2.jpg');">
+    <div class="white-centre-box" style="background-color: white; padding: 2rem; display: absolute; left: 50%; top: 50%;">
       <p>RSVP</p>
     </div>
 </div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 22, 2020 00:00:00").getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("days-left").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("days-left").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </body>
 </html>
