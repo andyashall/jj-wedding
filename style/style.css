@@ -62,12 +62,11 @@ box-shadow: 0 8px 25px -5px rgba(0,0,0,.25);
 
 .topbar {
   position: fixed;
+  vertical-align: middle;
   left: 0;
   right: 0;
   /*height: 3rem;*/
   padding-left: 20px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   top: 0;
   background-color: #fff;
   z-index: 1000;
@@ -77,6 +76,8 @@ box-shadow: 0 8px 25px -5px rgba(0,0,0,.25);
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .topbar {
@@ -100,6 +101,17 @@ box-shadow: 0 8px 25px -5px rgba(0,0,0,.25);
   font-size: 5rem;
   text-align: center;
   margin: 8rem 0;
+  background-image: url('couple.jpg');
+  text-shadow: 0 8px 25px -5px rgba(0,0,0,.25);
+}
+
+.countBack {
+  background-image: url('../img/couple.jpg');
+  background-position: center;
+  position: relative;
+  /*height: .3rem;*/
+  /*width: 50px; */
+  margin: 2rem 0;
 }
 
 @media screen and (max-width: 800px) {
